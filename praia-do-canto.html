@@ -30,7 +30,7 @@ a{color:inherit;text-decoration:none}
 .sec-title .lime,.split h2 .lime{color:var(--lime)}
 
 /* HEADER */
-header{position:fixed;top:var(--bar-h);left:0;right:0;z-index:100;backdrop-filter:blur(12px);background:rgba(11,17,24,0.82);border-bottom:1px solid var(--line)}
+header{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(12px);background:rgba(11,17,24,0.82);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:108px}
 .nav img.logo{height:76px;display:block}
 .nav-links{display:flex;gap:38px;align-items:center}
@@ -42,7 +42,7 @@ header{position:fixed;top:var(--bar-h);left:0;right:0;z-index:100;backdrop-filte
 @media(max-width:880px){.nav-links{display:none}.burger{display:block}}
 
 /* HERO */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:calc(108px + var(--bar-h));overflow:hidden}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding-top:108px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0;background:
   radial-gradient(820px 540px at 78% 25%, rgba(188,214,49,0.16), transparent 62%),
   radial-gradient(680px 520px at 8% 82%, rgba(188,214,49,0.07), transparent 60%)}
@@ -302,11 +302,6 @@ footer{background:#070C11;padding:58px 0 34px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
-<div class="promo-bar">
-  <span class="pb-cake"><svg viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg"><path d="M48.5 16 C53 23 53 31 48.5 31 C44 31 44 23 48.5 16 Z" fill="#FF8A3D"/><path d="M71.5 16 C76 23 76 31 71.5 31 C67 31 67 23 71.5 16 Z" fill="#FF8A3D"/><ellipse cx="48.5" cy="27" rx="2" ry="3" fill="#FFE58A"/><ellipse cx="71.5" cy="27" rx="2" ry="3" fill="#FFE58A"/><rect x="46" y="31" width="5" height="22" rx="2" fill="#0B1118"/><rect x="69" y="31" width="5" height="22" rx="2" fill="#0B1118"/><rect x="46" y="37" width="5" height="3" fill="#fff"/><rect x="69" y="37" width="5" height="3" fill="#fff"/><rect x="46" y="45" width="5" height="3" fill="#fff"/><rect x="69" y="45" width="5" height="3" fill="#fff"/><rect x="30" y="53" width="60" height="24" rx="7" fill="#fff"/><path d="M30 60 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 l0 -8 l-60 0 Z" fill="#E7EFD0"/><rect x="20" y="79" width="80" height="30" rx="8" fill="#0B1118"/><circle cx="34" cy="94" r="3" fill="#fff"/><circle cx="50" cy="99" r="3" fill="#fff"/><circle cx="66" cy="92" r="3" fill="#fff"/><circle cx="82" cy="98" r="3" fill="#fff"/><ellipse cx="60" cy="112" rx="52" ry="7" fill="none" stroke="#0B1118" stroke-width="2" opacity=".5"/></svg></span>
-  <span class="pb-msg"><span class="full">2 ANOS BE CYCLE — Maior desconto do ano! Apenas 50 planos promocionais.</span><span class="short">2 ANOS — só 50 planos, maior desconto!</span></span>
-  <a class="pb-cta" href="#planos">Aproveitar →</a>
-</div>
 
 <header>
   <div class="wrap nav">
@@ -329,13 +324,6 @@ footer{background:#070C11;padding:58px 0 34px;border-top:1px solid var(--line)}
   <div class="eq"><span></span><span></span><span></span><span></span><span></span><span></span></div>
   <div class="wrap hero-inner">
     <div class="eyebrow"><span class="dot"></span> Ciclismo Indoor • <a class="unit-hl" href="https://www.google.com/maps/search/?api=1&query=R.+Celso+Calmon,+267+-+Praia+do+Canto,+Vit%C3%B3ria+-+ES" target="_blank" rel="noopener">Praia do Canto</a></div>
-    <div class="hero-promo">
-      <div class="hp-cake"><svg viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg"><path d="M48.5 16 C53 23 53 31 48.5 31 C44 31 44 23 48.5 16 Z" fill="#FF8A3D"/><path d="M71.5 16 C76 23 76 31 71.5 31 C67 31 67 23 71.5 16 Z" fill="#FF8A3D"/><ellipse cx="48.5" cy="27" rx="2" ry="3" fill="#FFE58A"/><ellipse cx="71.5" cy="27" rx="2" ry="3" fill="#FFE58A"/><rect x="46" y="31" width="5" height="22" rx="2" fill="#0B1118"/><rect x="69" y="31" width="5" height="22" rx="2" fill="#0B1118"/><rect x="46" y="37" width="5" height="3" fill="#fff"/><rect x="69" y="37" width="5" height="3" fill="#fff"/><rect x="46" y="45" width="5" height="3" fill="#fff"/><rect x="69" y="45" width="5" height="3" fill="#fff"/><rect x="30" y="53" width="60" height="24" rx="7" fill="#fff"/><path d="M30 60 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 l0 -8 l-60 0 Z" fill="#E7EFD0"/><rect x="20" y="79" width="80" height="30" rx="8" fill="#0B1118"/><circle cx="34" cy="94" r="3" fill="#fff"/><circle cx="50" cy="99" r="3" fill="#fff"/><circle cx="66" cy="92" r="3" fill="#fff"/><circle cx="82" cy="98" r="3" fill="#fff"/><ellipse cx="60" cy="112" rx="52" ry="7" fill="none" stroke="#0B1118" stroke-width="2" opacity=".5"/></svg></div>
-      <div class="hp-body">
-        <div class="hp-top">Mês de aniversário de 2 anos</div>
-        <div class="hp-main">Serão apenas <span class="hp-num">50</span> planos promocionais. Garanta o seu com o <b>maior desconto do ano</b>!</div>
-      </div>
-    </div>
     <h1>Pedale. Sinta.<br><span class="lime">Transforme.</span></h1>
     <p class="lead">Studio de bike indoor onde treino e diversão andam juntos. A combinação perfeita entre tecnologia, som, luz e desempenho para transformar o seu treino — e a sua qualidade de vida.</p>
     <div class="hero-ctas">
@@ -352,39 +340,6 @@ footer{background:#070C11;padding:58px 0 34px;border-top:1px solid var(--line)}
   </div>
 </div>
 
-<section id="aniversario" class="anniv">
-  <div class="anniv-bg"></div>
-  <div class="party">
-    <div class="el balloon-l"><svg viewBox="0 0 60 98" xmlns="http://www.w3.org/2000/svg"><ellipse cx="30" cy="32" rx="26" ry="31" fill="#BCD631"/><polygon points="26,62 34,62 30,70" fill="#BCD631"/><path d="M30 70 q9 12 -3 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2"/><ellipse cx="21" cy="22" rx="5" ry="8" fill="rgba(255,255,255,.4)"/></svg></div>
-    <div class="el balloon-r"><svg viewBox="0 0 60 98" xmlns="http://www.w3.org/2000/svg"><ellipse cx="30" cy="32" rx="26" ry="31" fill="#F4F6F0"/><polygon points="26,62 34,62 30,70" fill="#F4F6F0"/><path d="M30 70 q9 12 -3 24" fill="none" stroke="rgba(188,214,49,.6)" stroke-width="2"/><ellipse cx="21" cy="22" rx="5" ry="8" fill="rgba(188,214,49,.35)"/></svg></div>
-    <div class="el hat-l"><svg viewBox="0 0 80 106" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="8" r="7" fill="#FFD23F"/><polygon points="40,10 66,92 14,92" fill="#BCD631"/><circle cx="40" cy="34" r="3.2" fill="#0B1118"/><circle cx="33" cy="54" r="3.2" fill="#0B1118"/><circle cx="47" cy="54" r="3.2" fill="#0B1118"/><circle cx="40" cy="72" r="3.2" fill="#0B1118"/><ellipse cx="40" cy="92" rx="27" ry="6" fill="#EAF3C9"/></svg></div>
-    <div class="el blower-r"><svg viewBox="0 0 150 72" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="26" width="9" height="22" rx="3" fill="#0B1118"/><polygon points="14,28 14,46 44,40 44,34" fill="#BCD631"/><path d="M44 34 q28 -8 54 3 q22 8 44 -3" fill="none" stroke="#FFD23F" stroke-width="8" stroke-linecap="round"/><path d="M142 32 q11 3 8 12 q-3 7 -10 3" fill="none" stroke="#FFD23F" stroke-width="7" stroke-linecap="round"/></svg></div>
-  </div>
-  <div class="confetti"><i style="left:5%;animation-delay:-1.6s"></i><i style="left:12%;animation-delay:-0.8s"></i><i style="left:20%;animation-delay:-3.3s"></i><i style="left:28%;animation-delay:-0.4s"></i><i style="left:36%;animation-delay:-2.7s"></i><i style="left:44%;animation-delay:-1.8s"></i><i style="left:52%;animation-delay:-0.3s"></i><i style="left:60%;animation-delay:-2.5s"></i><i style="left:68%;animation-delay:-0.2s"></i><i style="left:76%;animation-delay:-2.2s"></i><i style="left:84%;animation-delay:-0.3s"></i><i style="left:92%;animation-delay:-0.5s"></i></div>
-  <div class="wrap">
-    <svg class="cake" viewBox="0 0 120 130" xmlns="http://www.w3.org/2000/svg">
-      <path class="flame" d="M48.5 16 C53 23 53 31 48.5 31 C44 31 44 23 48.5 16 Z" fill="#FFD23F"/>
-      <path class="flame" d="M71.5 16 C76 23 76 31 71.5 31 C67 31 67 23 71.5 16 Z" fill="#FFD23F"/>
-      <ellipse cx="48.5" cy="27" rx="2" ry="3" fill="#FF8A3D"/>
-      <ellipse cx="71.5" cy="27" rx="2" ry="3" fill="#FF8A3D"/>
-      <rect x="46" y="31" width="5" height="22" rx="2" fill="#fff"/>
-      <rect x="69" y="31" width="5" height="22" rx="2" fill="#fff"/>
-      <rect x="46" y="37" width="5" height="3" fill="#BCD631"/><rect x="69" y="37" width="5" height="3" fill="#BCD631"/>
-      <rect x="46" y="45" width="5" height="3" fill="#BCD631"/><rect x="69" y="45" width="5" height="3" fill="#BCD631"/>
-      <rect x="30" y="53" width="60" height="24" rx="7" fill="#EAF3C9"/>
-      <path d="M30 60 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 q7.5 11 15 0 l0 -8 l-60 0 Z" fill="#fff"/>
-      <rect x="20" y="79" width="80" height="30" rx="8" fill="#BCD631"/>
-      <circle cx="34" cy="94" r="3" fill="#0B1118"/><circle cx="50" cy="99" r="3" fill="#0B1118"/><circle cx="66" cy="92" r="3" fill="#0B1118"/><circle cx="82" cy="98" r="3" fill="#0B1118"/>
-      <ellipse cx="60" cy="112" rx="52" ry="7" fill="none" stroke="#BCD631" stroke-width="2" opacity=".55"/>
-    </svg>
-    <div class="big2">2 ANOS</div>
-    <div class="k">// Mês de aniversário</div>
-    <h2>Be Cycle Praia do Canto faz <span class="lime">2 anos</span></h2>
-    <p class="lead">Sopramos as velinhas e o desejo foi só um: te dar o <b style="color:var(--lime)">maior desconto do ano</b>. Corre pra realizar — <span class="hl-month">só neste mês</span>!</p>
-    <div class="anniv-note">📍 Válido somente para <b>agendamento de aulas na Praia do Canto</b></div>
-    <div><a href="#planos" class="btn-primary">Ver ofertas →</a></div>
-  </div>
-</section>
 
 <section id="experiencia">
   <div class="wrap">
@@ -443,94 +398,6 @@ footer{background:#070C11;padding:58px 0 34px;border-top:1px solid var(--line)}
   </div>
 </section>
 
-<section id="promo-aniversario" class="promo-section">
-  <div class="wrap">
-    <div class="ao-head-wrap">
-      <div class="sec-eyebrow">// Oferta especial</div>
-      <h2 class="sec-title">🎂 Ofertas de <span class="lime">aniversário</span></h2>
-      <p class="sec-sub">Preços especiais de 2 anos — enquanto durarem as vagas.</p>
-      <div class="ao-note">📍 Planos promocionais válidos <b>somente para agendamento de aulas na unidade Praia do Canto</b> • Apenas 50 vagas • Maior desconto do ano</div>
-    </div>
-    <div class="ao-grid ao-grid-6">
-        <div class="promo-card featured-anniv top-feat">
-          <div class="badge">🏆 MAIS VANTAJOSO</div>
-          <div class="ribbon">Novidade • 2 anos</div>
-          <h4>Plano Anual Ilimitado</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">12<small>,97</small></span></div>
-          <div class="per-aula-lbl">preço por aula (30 aulas/mês, o ano todo)</div>
-          <div class="total-line">
-            <div class="big">12x de R$ 389</div>
-            <div class="sub">💳 Total: R$ 4.668</div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/598/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-        <div class="promo-card featured-anniv">
-          
-          <div class="ribbon">Presente de aniversário</div>
-          <h4>Mensal Ilimitado</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">6<small>,63</small></span></div>
-          <div class="per-aula-lbl">preço por aula no 1º mês (30 aulas/mês)</div>
-          <div class="total-line">
-            <div class="big">R$ 199 no 1º mês</div>
-            <div class="sub">💳 Total: R$ 199</div>
-          </div>
-          <div class="depois-box">
-            <div class="depois-lbl">📅 A partir do 2º mês</div>
-            <div class="depois-row"><span class="depois-val">R$ 16<small style="font-size:14px">,30</small></span><span class="depois-per">/aula</span><span class="depois-tot">R$ 489/mês</span></div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/597/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-        <div class="promo-card">
-          <div class="ribbon">+ 2 aulas de Bônus</div>
-          <h4>10 créditos</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">43,33</span></div>
-          <div class="per-aula-lbl">preço por aula</div>
-          <div class="pc-bonus"><span class="pc-n">10</span> + <span class="pc-b">2 bônus</span> <span class="pc-eq">= 12 aulas</span></div>
-          <div class="total-line">
-            <div class="big">2x de R$ 260</div>
-            <div class="sub">Total: R$ 520</div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/593/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-        <div class="promo-card">
-          <div class="ribbon">+ 4 aulas de Bônus</div>
-          <h4>20 créditos</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">40,42</span></div>
-          <div class="per-aula-lbl">preço por aula</div>
-          <div class="pc-bonus"><span class="pc-n">20</span> + <span class="pc-b">4 bônus</span> <span class="pc-eq">= 24 aulas</span></div>
-          <div class="total-line">
-            <div class="big">3x de R$ 323,33</div>
-            <div class="sub">Total: R$ 970</div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/594/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-        <div class="promo-card">
-          <div class="ribbon">+ 8 aulas de Bônus</div>
-          <h4>30 créditos</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">36,32</span></div>
-          <div class="per-aula-lbl">preço por aula</div>
-          <div class="pc-bonus"><span class="pc-n">30</span> + <span class="pc-b">8 bônus</span> <span class="pc-eq">= 38 aulas</span></div>
-          <div class="total-line">
-            <div class="big">4x de R$ 345</div>
-            <div class="sub">Total: R$ 1.380</div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/595/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-        <div class="promo-card">
-          <div class="ribbon">+ 11 aulas de Bônus</div>
-          <h4>65 créditos</h4>
-          <div class="per-aula"><span class="cur">R$</span><span class="val">37,63</span></div>
-          <div class="per-aula-lbl">preço por aula</div>
-          <div class="pc-bonus"><span class="pc-n">65</span> + <span class="pc-b">11 bônus</span> <span class="pc-eq">= 76 aulas</span></div>
-          <div class="total-line">
-            <div class="big">6x de R$ 476,67</div>
-            <div class="sub">Total: R$ 2.860</div>
-          </div>
-          <a class="buy-btn" href="https://evo-totem.w12app.com.br/STUDIOFERNANDOPADILHA/4/site/landing-page/checkout/596/0" target="_blank" rel="noopener">Eu quero →</a>
-        </div>
-      </div>
-  </div>
-</section>
 
 <section id="planos" class="plans">
   <div class="wrap">
@@ -582,8 +449,7 @@ footer{background:#070C11;padding:58px 0 34px;border-top:1px solid var(--line)}
 
       <!-- 10 CRÉDITOS RECORRENTES -->
       <div class="plan">
-        <div class="ptag">Recorrente</div>
-        <h3>10 créditos mensais</h3>
+        <h3>10 créditos mensais Recorrente</h3>
         <div class="per-aula"><span class="cur">R$</span><span class="val">39</span><span class="cents">,90</span></div>
         <div class="per-aula-lbl">preço por aula</div>
         <div class="total-line">
